@@ -2,20 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0; 
-}
-
-html, body {
-  height: 100%;
-}
-
-
-img {
-  display: block;
-  max-width: 100%;
+@layer components {
+  .navlink {
+     @apply cursor-pointer hover:underline 
+  }
 }
